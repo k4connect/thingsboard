@@ -35,7 +35,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.dir>${basedir}/../..</main.dir>
-        <aws.sdk.version>1.11.323</aws.sdk.version>
+        <aws.sdk.version>1.11.453</aws.sdk.version>
     </properties>
 
     <dependencies>

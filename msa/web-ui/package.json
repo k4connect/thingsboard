@@ -9,7 +9,9 @@
     "install": "pkg -t node8-linux-x64,node8-win-x64 --out-path ./target . && node install.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "WEB_FOLDER=./target/web nodemon server.js",
-    "start-prod": "NODE_ENV=production nodemon server.js"
+    "start-prod": "NODE_ENV=production nodemon server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "compression": "^1.7.3",
@@ -20,7 +22,8 @@
     "http-proxy": "^1.17.0",
     "js-yaml": "^3.12.0",
     "winston": "^3.0.0",
-    "winston-daily-rotate-file": "^3.2.1"
+    "winston-daily-rotate-file": "^3.2.1",
+    "snyk": "^1.189.0"
   },
   "engine": "node >= 5.9.0",
   "nyc": {
@@ -35,5 +38,6 @@
     "fs-extra": "^6.0.1",
     "nodemon": "^1.17.5",
     "pkg": "^4.3.3"
-  }
+  },
+  "snyk": true
 }

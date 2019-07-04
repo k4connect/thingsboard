@@ -10,7 +10,9 @@
     "install": "npm run build-proto && pkg -t node8-linux-x64,node8-win-x64 --out-path ./target . && node install.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build-proto && nodemon server.js",
-    "start-prod": "npm run build-proto && NODE_ENV=production nodemon server.js"
+    "start-prod": "npm run build-proto && NODE_ENV=production nodemon server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "config": "^1.30.0",
@@ -20,7 +22,8 @@
     "protobufjs": "^6.8.8",
     "uuid-parse": "^1.0.0",
     "winston": "^3.0.0",
-    "winston-daily-rotate-file": "^3.2.1"
+    "winston-daily-rotate-file": "^3.2.1",
+    "snyk": "^1.189.0"
   },
   "engine": "node >= 5.9.0",
   "nyc": {
@@ -35,5 +38,6 @@
     "fs-extra": "^6.0.1",
     "nodemon": "^1.17.5",
     "pkg": "^4.3.3"
-  }
+  },
+  "snyk": true
 }

@@ -29,7 +29,7 @@
 
     <properties>
         <main.dir>${basedir}</main.dir>
-        <spring-boot.version>1.4.3.RELEASE</spring-boot.version>
+        <spring-boot.version>1.4.6.RELEASE</spring-boot.version>
         <spring.version>4.3.4.RELEASE</spring.version>
         <spring-security.version>4.2.0.RELEASE</spring-security.version>
         <spring-data-redis.version>1.8.10.RELEASE</spring-data-redis.version>
@@ -59,7 +59,7 @@
         <velocity.version>1.7</velocity.version>
         <velocity-tools.version>2.0</velocity-tools.version>
         <mail.version>1.4.3</mail.version>
-        <curator.version>4.0.1</curator.version>
+        <curator.version>4.2.0</curator.version>
         <protobuf.version>3.0.2</protobuf.version>
         <grpc.version>1.12.0</grpc.version>
         <lombok.version>1.16.18</lombok.version>
@@ -260,7 +260,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
